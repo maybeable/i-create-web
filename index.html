@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>喵御膳 - AI养宠 · 科学喂养 · 国风美学</title>
+  <meta name="description" content="喵御膳，融合中国传统养生智慧与现代AI科技，为您的爱猫定制专属健康饮食方案。传承千年养生智慧，呵护爱猫健康一生。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" fill="url(#logoGrad)"/>
+            <text x="20" y="26" text-anchor="middle" fill="white" font-size="16" font-weight="bold">喵</text>
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="40" y2="40">
+                <stop offset="0%" stop-color="#C4A35A"/>
+                <stop offset="100%" stop-color="#8B4513"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="logo-text">喵御膳</div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">首页</a></li>
+        <li><a href="products.html">产品介绍</a></li>
+        <li><a href="ai-health.html">AI健康管理</a></li>
+        <li><a href="aesthetics.html">国风美学</a></li>
+        <li><a href="about.html">关于我们</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">预约咨询</a>
+    </div>
+  </nav>
+
+  <!-- Hero区域 -->
+  <section class="hero">
+    <!-- 梅花装饰 - 左上角 -->
+    <div class="deco-plum-tl">
+      <svg viewBox="0 0 200 150" fill="none">
+        <path d="M0 80 Q30 60 50 80 T90 70 T130 85" stroke="#D4A5A5" stroke-width="2" fill="none"/>
+        <circle cx="50" cy="80" r="6" fill="#D4A5A5"/>
+        <circle cx="70" cy="75" r="5" fill="#E8B4B4"/>
+        <circle cx="90" cy="70" r="6" fill="#D4A5A5"/>
+        <circle cx="110" cy="78" r="4" fill="#E8B4B4"/>
+        <circle cx="130" cy="85" r="5" fill="#D4A5A5"/>
+        <path d="M40 40 Q50 30 60 40" stroke="#D4A5A5" stroke-width="1.5" fill="none"/>
+        <circle cx="50" cy="35" r="4" fill="#D4A5A5"/>
+      </svg>
+    </div>
+
+    <!-- 水墨山水背景 -->
+    <div class="hero-bg">
+      <svg viewBox="0 0 1440 600" preserveAspectRatio="xMidYMid slice" fill="none">
+        <!-- 远山 -->
+        <path d="M0 400 Q200 300 400 380 T800 350 T1200 380 T1440 360 V600 H0 Z" fill="url(#mountain1)" opacity="0.3"/>
+        <path d="M0 450 Q300 380 600 420 T1000 400 T1440 430 V600 H0 Z" fill="url(#mountain2)" opacity="0.4"/>
+        <!-- 中式建筑剪影 -->
+        <path d="M80 420 L100 400 L120 420 V450 H80 Z" fill="#6B6B6B" opacity="0.3"/>
+        <path d="M60 380 L90 350 L120 380 V420 H60 Z" fill="#6B6B6B" opacity="0.25"/>
+        <!-- 祥云 -->
+        <path d="M200 200 Q220 180 240 200 T280 200" stroke="#C4A35A" stroke-width="2" fill="none" opacity="0.4"/>
+        <path d="M1100 150 Q1120 130 1140 150 T1180 150" stroke="#C4A35A" stroke-width="2" fill="none" opacity="0.4"/>
+        <defs>
+          <linearGradient id="mountain1" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#8B7355"/>
+            <stop offset="100%" stop-color="#F5F0E6"/>
+          </linearGradient>
+          <linearGradient id="mountain2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#6B6B6B"/>
+            <stop offset="100%" stop-color="#F5F0E6"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <!-- 左侧文字 -->
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="title-main">喵御膳</span>
+            <span class="title-seal">御</span>
+          </h1>
+          <p class="hero-subtitle">AI养宠 · 科学喂养 · 国风美学</p>
+          <p class="hero-desc">融合中国传统养生智慧与现代AI科技<br>为您的爱猫定制专属健康饮食方案</p>
+          <!-- 祥云装饰 -->
+          <div class="deco-cloud">
+            <svg viewBox="0 0 60 30" fill="none">
+              <path d="M10 20 Q20 10 30 20 T50 20" stroke="#C4A35A" stroke-width="1.5" fill="none" opacity="0.5"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- 右侧猫咪与产品 -->
+        <div class="hero-visual">
+          <!-- 圆形窗格 -->
+          <div class="window-frame">
+            <div class="window-inner">
+              <img src="assets/images/hero-cat-bg.png" alt="汉服猫咪" class="hero-cat">
+            </div>
+            <!-- 窗格装饰 -->
+            <svg class="window-deco" viewBox="0 0 320 320" fill="none">
+              <circle cx="160" cy="160" r="155" stroke="#C4A35A" stroke-width="3"/>
+              <circle cx="160" cy="160" r="148" stroke="#C4A35A" stroke-width="1"/>
+              <!-- 回纹装饰 -->
+              <path d="M160 5 V30 M160 290 V315 M5 160 H30 M290 160 H315" stroke="#C4A35A" stroke-width="2"/>
+            </svg>
+          </div>
+          <!-- 品牌竖条 -->
+          <div class="brand-ribbon">
+            <span>喵</span>
+            <span>御</span>
+            <span>膳</span>
+          </div>
+          <!-- 产品展示 -->
+          <div class="product-showcase">
+            <div class="food-bowl">
+              <svg viewBox="0 0 100 60" fill="none">
+                <ellipse cx="50" cy="40" rx="45" ry="20" fill="url(#bowlGrad)"/>
+                <ellipse cx="50" cy="35" rx="40" ry="15" fill="#8B4513"/>
+                <ellipse cx="50" cy="32" rx="35" ry="12" fill="#A0522D"/>
+                <!-- 猫粮颗粒 -->
+                <circle cx="35" cy="30" r="3" fill="#D4A35A"/>
+                <circle cx="45" cy="28" r="3" fill="#C49A5A"/>
+                <circle cx="55" cy="29" r="3" fill="#D4A35A"/>
+                <circle cx="65" cy="31" r="3" fill="#C49A5A"/>
+                <circle cx="40" cy="35" r="3" fill="#C49A5A"/>
+                <circle cx="50" cy="33" r="3" fill="#D4A35A"/>
+                <circle cx="60" cy="35" r="3" fill="#C49A5A"/>
+                <defs>
+                  <linearGradient id="bowlGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#C4A35A"/>
+                    <stop offset="100%" stop-color="#8B4513"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="product-pack">
+              <svg viewBox="0 0 80 100" fill="none">
+                <rect x="10" y="20" width="60" height="70" rx="4" fill="#F5F0E6" stroke="#C4A35A" stroke-width="2"/>
+                <rect x="15" y="15" width="50" height="10" rx="2" fill="#C4A35A"/>
+                <text x="40" y="55" text-anchor="middle" fill="#8B4513" font-size="12" font-weight="bold">喵御膳</text>
+                <text x="40" y="70" text-anchor="middle" fill="#666" font-size="8">御品猫粮</text>
+                <!-- 猫咪简笔画 -->
+                <circle cx="40" cy="40" r="8" fill="#C4A35A" opacity="0.3"/>
+                <path d="M35 36 L38 38 M45 36 L42 38" stroke="#8B4513" stroke-width="1"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 四大核心特色 -->
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <div class="icon-badge">AI</div>
+          </div>
+          <h3>AI健康分析</h3>
+          <p>基于大数据与深度学习<br>精准分析猫咪健康状态<br>定制专属饮食方案</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="#C4A35A" stroke-width="2">
+              <path d="M20 5 L25 15 H35 L27 22 L30 33 L20 26 L10 33 L13 22 L5 15 H15 Z"/>
+            </svg>
+          </div>
+          <h3>国风养生配方</h3>
+          <p>汲取《黄帝内经》养生智慧<br>科学配比天然食材<br>补益猫咪元气</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="#C4A35A" stroke-width="2">
+              <circle cx="20" cy="20" r="15"/>
+              <path d="M20 10 V20 L26 26"/>
+            </svg>
+          </div>
+          <h3>全周期健康管理</h3>
+          <p>从幼猫到老年<br>覆盖猫咪全生命周期<br>科学陪伴每一阶段成长</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="#C4A35A" stroke-width="2">
+              <path d="M20 5 L25 15 L35 15 L27 22 L30 32 L20 26 L10 32 L13 22 L5 15 L15 15 Z" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>优质天然食材</h3>
+          <p>严选人食级原料<br>无添加零谷物<br>从源头守护猫咪健康</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 喵御膳的独特价值 -->
+  <section class="values">
+    <div class="section-header">
+      <h2>喵御膳的独特价值</h2>
+      <div class="header-deco">
+        <span></span>
+        <svg viewBox="0 0 20 20" fill="#C4A35A"><circle cx="10" cy="10" r="3"/></svg>
+        <span></span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-image">
+            <svg viewBox="0 0 200 150" fill="none">
+              <!-- 猫咪剪影 -->
+              <ellipse cx="100" cy="100" rx="40" ry="35" fill="url(#catGrad1)"/>
+              <circle cx="75" cy="75" r="25" fill="url(#catGrad1)"/>
+              <path d="M60 60 L65 45 L75 55 L85 45 L90 60" fill="url(#catGrad1)"/>
+              <!-- 装饰圆圈 -->
+              <circle cx="160" cy="40" r="25" fill="none" stroke="#D4A5A5" stroke-width="2" opacity="0.5"/>
+              <circle cx="30" cy="120" r="15" fill="none" stroke="#C4A35A" stroke-width="2" opacity="0.3"/>
+              <defs>
+                <linearGradient id="catGrad1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#D4A5A5"/>
+                  <stop offset="100%" stop-color="#C4A35A"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h3>以猫为本</h3>
+          <p>基于生物特性与行为学<br>科学满足猫咪天性需求<br>让每只猫咪都被温柔以待</p>
+        </div>
+        <div class="value-card">
+          <div class="value-image">
+            <svg viewBox="0 0 200 150" fill="none">
+              <ellipse cx="100" cy="100" rx="40" ry="35" fill="url(#catGrad2)"/>
+              <circle cx="125" cy="75" r="25" fill="url(#catGrad2)"/>
+              <path d="M140 60 L135 45 L125 55 L115 45 L110 60" fill="url(#catGrad2)"/>
+              <circle cx="40" cy="50" r="20" fill="none" stroke="#D4A5A5" stroke-width="2" opacity="0.5"/>
+              <defs>
+                <linearGradient id="catGrad2" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#E8C4A8"/>
+                  <stop offset="100%" stop-color="#C4A35A"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h3>国风养生</h3>
+          <p>汲取千年中医智慧<br>顺时调养，食疗为先<br>呵护猫咪健康之本</p>
+        </div>
+        <div class="value-card">
+          <div class="value-image">
+            <svg viewBox="0 0 200 150" fill="none">
+              <ellipse cx="100" cy="100" rx="40" ry="35" fill="url(#catGrad3)"/>
+              <circle cx="80" cy="70" r="28" fill="url(#catGrad3)"/>
+              <path d="M65 55 L70 40 L80 50 L90 40 L95 55" fill="url(#catGrad3)"/>
+              <rect x="150" y="80" width="30" height="25" rx="3" fill="none" stroke="#C4A35A" stroke-width="2" opacity="0.4"/>
+              <defs>
+                <linearGradient id="catGrad3" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#B8D4E3"/>
+                  <stop offset="100%" stop-color="#8B4513"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h3>AI科技赋能</h3>
+          <p>大数据与人工智能驱动<br>精准洞察猫咪需求<br>智慧养宠更轻松</p>
+        </div>
+        <div class="value-card">
+          <div class="value-image">
+            <svg viewBox="0 0 200 150" fill="none">
+              <ellipse cx="100" cy="100" rx="40" ry="35" fill="url(#catGrad4)"/>
+              <circle cx="120" cy="70" r="28" fill="url(#catGrad4)"/>
+              <path d="M135 55 L130 40 L120 50 L110 40 L105 55" fill="url(#catGrad4)"/>
+              <circle cx="40" cy="100" r="20" fill="none" stroke="#D4A5A5" stroke-width="2" opacity="0.4"/>
+              <defs>
+                <linearGradient id="catGrad4" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#D4C4A5"/>
+                  <stop offset="100%" stop-color="#8B7355"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h3>国风美学体验</h3>
+          <p>传承东方生活美学<br>让每一次喂养都成为<br>一场文化与爱的仪式</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA区域 -->
+  <section class="cta-section" id="contact">
+    <div class="cta-deco-wave">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path d="M0 50 Q360 0 720 50 T1440 50 V100 H0 Z" fill="#F5F0E6" opacity="0.3"/>
+      </svg>
+    </div>
+    <div class="container">
+      <a href="#" class="cta-button">
+        <span>预约咨询</span>
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+          <circle cx="12" cy="9" r="2.5" fill="white"/>
+        </svg>
+      </a>
+      <p class="cta-subtitle">开启专属爱猫健康之旅</p>
+    </div>
+  </section>
+
+  <!-- 数据统计 -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg viewBox="0 0 48 48" fill="currentColor">
+              <path d="M24 4c-11 0-20 7-20 16 0 7 5 13 12 15v4c0 2 2 4 4 4h8c2 0 4-2 4-4v-4c7-2 12-8 12-15 0-9-9-16-20-16z"/>
+            </svg>
+          </div>
+          <div class="stat-number">1000+</div>
+          <div class="stat-label">猫咪健康案例</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg viewBox="0 0 48 48" fill="currentColor">
+              <path d="M24 4l6 12 13 2-9 9 2 13-12-6-12 6 2-13-9-9 13-2z"/>
+            </svg>
+          </div>
+          <div class="stat-number">95%</div>
+          <div class="stat-label">用户满意度</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg viewBox="0 0 48 48" fill="currentColor">
+              <path d="M24 4c-6 0-11 5-11 11 0 4 2 7 5 9-6 2-11 8-11 15v4h34v-4c0-7-5-13-11-15 3-2 5-5 5-9 0-6-5-11-11-11z"/>
+            </svg>
+          </div>
+          <div class="stat-number">50+</div>
+          <div class="stat-label">权威顾问团队</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg viewBox="0 0 48 48" fill="currentColor">
+              <path d="M24 4L6 14v20l18 10 18-10V14L24 4zm0 8l12 6.5v13L24 38 12 31.5v-13L24 12z"/>
+            </svg>
+          </div>
+          <div class="stat-number">100%</div>
+          <div class="stat-label">科学配方</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="footer-deco">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path d="M0 30 Q360 80 720 30 T1440 30 V100 H0 Z" fill="#F5F0E6"/>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="footer-logo">
+        <div class="logo-icon small">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" fill="url(#logoGradFooter)"/>
+            <text x="20" y="26" text-anchor="middle" fill="white" font-size="16" font-weight="bold">喵</text>
+            <defs>
+              <linearGradient id="logoGradFooter" x1="0" y1="0" x2="40" y2="40">
+                <stop offset="0%" stop-color="#C4A35A"/>
+                <stop offset="100%" stop-color="#8B4513"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="logo-text-footer">喵御膳</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="products.html">产品介绍</a></li>
+        <li><a href="ai-health.html">AI健康管理</a></li>
+        <li><a href="aesthetics.html">国风美学</a></li>
+        <li><a href="about.html">关于我们</a></li>
+      </ul>
+      <p class="footer-copy">传承千年养生智慧，呵护爱猫健康一生</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

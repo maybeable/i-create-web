@@ -1,0 +1,655 @@
+/* AI健康管理页面样式 */
+
+/* Hero区域 */
+.ai-hero {
+  min-height: 100vh;
+  padding-top: 72px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ai-hero .hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 72px);
+  padding: 40px 0;
+}
+
+.ai-hero .hero-text {
+  flex: 1;
+  max-width: 500px;
+  z-index: 2;
+}
+
+.hero-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.title-main {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 72px;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: 8px;
+}
+
+.title-seal {
+  width: 48px;
+  height: 48px;
+  background: #8B0000;
+  color: white;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  writing-mode: vertical-rl;
+  letter-spacing: 2px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: var(--color-secondary);
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.hero-desc {
+  font-size: 16px;
+  color: var(--color-text-light);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-size: 16px;
+}
+
+.deco-cloud {
+  margin-top: 40px;
+  width: 60px;
+}
+
+/* Hero视觉区域 */
+.hero-visual {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 600px;
+}
+
+.window-frame {
+  position: relative;
+  width: 320px;
+  height: 320px;
+}
+
+.window-inner {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #F5F0E6, #E8E0D5);
+}
+
+.hero-cat {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.window-deco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.brand-ribbon {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: linear-gradient(180deg, #8B0000, #A52A2A);
+  padding: 16px 8px;
+  border-radius: 4px;
+}
+
+.brand-ribbon span {
+  color: white;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 18px;
+  font-weight: 600;
+  writing-mode: vertical-rl;
+  letter-spacing: 4px;
+}
+
+.product-showcase {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.food-bowl {
+  width: 100px;
+}
+
+.product-pack {
+  width: 60px;
+}
+
+/* 梅花装饰 */
+.deco-plum-tl {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 200px;
+  z-index: 1;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+/* 四大核心特色 */
+.features-section {
+  padding: 80px 0;
+  background: linear-gradient(180deg, var(--color-bg), #FAF8F3);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.section-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 32px 24px;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-card);
+}
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+}
+
+.feature-card h3 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: var(--color-text-light);
+  line-height: 1.8;
+}
+
+/* AI智能健康管家 */
+.ai-butler {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #FAF8F3, var(--color-bg));
+  position: relative;
+}
+
+.ai-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+/* 手机展示 */
+.phone-showcase {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.phone-frame {
+  width: 280px;
+  height: 560px;
+  background: #1a1a1a;
+  border-radius: 40px;
+  padding: 12px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #F5F0E6, #FAF8F3);
+  border-radius: 32px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.status-icons {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.phone-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+}
+
+.user-avatar {
+  width: 48px;
+  height: 48px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.greeting {
+  font-size: 14px;
+  color: var(--color-text-light);
+}
+
+.username {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+/* 健康分数卡片 */
+.health-score-card {
+  margin: 0 16px 16px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.score-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.score-circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.score-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: 700;
+  color: #4CAF50;
+}
+
+.score-label {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--color-text-light);
+}
+
+.health-tags {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tag {
+  padding: 6px 12px;
+  background: #F5F0E6;
+  border-radius: 20px;
+  font-size: 12px;
+  color: var(--color-text);
+}
+
+.tag.good {
+  background: #E8F5E9;
+  color: #4CAF50;
+}
+
+/* 建议卡片 */
+.suggestion-card {
+  margin: 0 16px;
+  background: white;
+  border-radius: 20px;
+  padding: 16px 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  flex: 1;
+}
+
+.suggestion-card h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #F5F0E6;
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.suggestion-item:last-child {
+  border-bottom: none;
+}
+
+.s-icon {
+  font-size: 18px;
+}
+
+/* 手机底部导航 */
+.phone-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  background: white;
+  margin-top: auto;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-text-light);
+  font-size: 11px;
+}
+
+.nav-item.active {
+  color: var(--color-secondary);
+}
+
+/* 手机装饰 */
+.phone-deco {
+  position: absolute;
+  z-index: 1;
+}
+
+.deco-1 {
+  width: 200px;
+  height: 200px;
+  top: -40px;
+  left: -60px;
+}
+
+.deco-2 {
+  width: 120px;
+  height: 120px;
+  bottom: 60px;
+  right: -40px;
+}
+
+/* AI介绍文字 */
+.ai-intro {
+  max-width: 400px;
+}
+
+.ai-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 20px;
+}
+
+.ai-desc {
+  font-size: 16px;
+  color: var(--color-text-light);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.ai-cta {
+  display: inline-flex;
+}
+
+/* 品牌功能区 */
+.brand-features {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #6B8E8A, #5A7A76);
+  position: relative;
+  overflow: hidden;
+}
+
+.brand-features::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.5;
+}
+
+.brand-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.brand-name-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  writing-mode: vertical-rl;
+  background: rgba(139, 0, 0, 0.9);
+  padding: 24px 12px;
+  border-radius: 4px;
+}
+
+.brand-name-vertical span {
+  color: white;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+
+.features-icons {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-circle-large {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+.icon-label {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.icon-sub {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
+
+.paw-decoration {
+  width: 180px;
+  height: 180px;
+  flex-shrink: 0;
+}
+
+/* Slogan区域 */
+.slogan-section {
+  padding: 40px 0;
+  background: var(--color-bg);
+  text-align: center;
+  border-top: 1px solid rgba(196, 163, 90, 0.2);
+}
+
+.slogan-text {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 18px;
+  color: var(--color-text-light);
+  letter-spacing: 4px;
+}
+
+/* 响应式 */
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ai-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .features-icons {
+    gap: 30px;
+  }
+
+  .paw-decoration {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-main {
+    font-size: 48px;
+  }
+
+  .ai-hero .hero-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  .ai-hero .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-visual {
+    display: none;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .features-icons {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .brand-name-vertical {
+    display: none;
+  }
+
+  .ai-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .ai-desc {
+    text-align: center;
+  }
+
+  .ai-cta {
+    margin: 0 auto;
+    display: flex;
+  }
+}
