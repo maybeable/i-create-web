@@ -1,0 +1,709 @@
+/* 喵御膳 - 国风美学页样式（纯CSS版） */
+
+.aesthetics-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 72px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #FAF8F3 0%, #F5F0E6 100%);
+}
+
+/* 水墨山水背景 - 纯CSS实现 */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.ink-mountains {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background:
+    /* 远山层叠 */
+    radial-gradient(ellipse 80% 40% at 20% 100%, rgba(107, 107, 107, 0.15) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 30% at 50% 100%, rgba(139, 139, 139, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 70% 35% at 80% 100%, rgba(107, 107, 107, 0.1) 0%, transparent 65%),
+    /* 水墨晕染效果 */
+    radial-gradient(ellipse 40% 20% at 30% 90%, rgba(60, 60, 60, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 25% at 70% 85%, rgba(80, 80, 80, 0.06) 0%, transparent 55%);
+  filter: blur(1px);
+}
+
+.ink-mountains::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background:
+    /* 山峰剪影 */
+    linear-gradient(135deg, transparent 50%, rgba(107, 107, 107, 0.1) 50%),
+    linear-gradient(225deg, transparent 50%, rgba(107, 107, 107, 0.08) 50%);
+  background-size: 200px 150px;
+  background-position: bottom;
+  opacity: 0.6;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text {
+  padding: 40px 0;
+}
+
+.hero-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.title-main {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: 8px;
+}
+
+.title-seal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #A52A2A, #CD5C5C);
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 4px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 12px rgba(165, 42, 42, 0.3);
+}
+
+.hero-subtitle {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 20px;
+  color: var(--color-secondary);
+  letter-spacing: 4px;
+  margin-bottom: 24px;
+}
+
+.hero-desc {
+  font-size: 15px;
+  color: var(--color-text-light);
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.window-frame {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 3px solid var(--color-primary);
+  padding: 8px;
+  background: white;
+  overflow: hidden;
+}
+
+.window-frame::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* 汉服猫咪 - CSS艺术化呈现 */
+.cat-art {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background:
+    /* 猫咪头部 */
+    radial-gradient(circle at 50% 45%, #F5DEB3 25%, transparent 25%),
+    /* 耳朵 */
+    radial-gradient(ellipse 15% 20% at 35% 28%, #F5DEB3 50%, transparent 50%),
+    radial-gradient(ellipse 15% 20% at 65% 28%, #F5DEB3 50%, transparent 50%),
+    /* 汉服衣领 */
+    radial-gradient(circle at 50% 65%, #C4A35A 30%, transparent 30%),
+    radial-gradient(circle at 50% 70%, #8B4513 35%, transparent 35%),
+    /* 发饰 */
+    radial-gradient(circle at 28% 35%, #D4A5A5 8%, transparent 8%),
+    radial-gradient(circle at 72% 35%, #D4A5A5 8%, transparent 8%);
+  background-color: #FDF8F0;
+  position: relative;
+}
+
+.cat-art::before {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  width: 4px;
+  height: 4px;
+  background: #3D3D3D;
+  border-radius: 50%;
+  box-shadow: 16px 0 0 #3D3D3D;
+}
+
+.cat-art::after {
+  content: '';
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 5px;
+  background: #FFB6C1;
+  border-radius: 0 0 50% 50%;
+}
+
+/* 浮动产品 - CSS形状 */
+.product-float {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+  width: 80px;
+  height: 100px;
+  background: linear-gradient(145deg, #C4A35A, #8B4513);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.product-float::before {
+  content: '喵';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.product-float::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 20px;
+  background: linear-gradient(145deg, #D4A5A5, #C49494);
+  border-radius: 4px 4px 0 0;
+}
+
+.section-header {
+  text-align: center;
+  padding: 80px 0 48px;
+  background: linear-gradient(180deg, var(--color-bg-light), var(--color-bg));
+}
+
+.section-header h2 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 16px;
+  letter-spacing: 4px;
+}
+
+.header-deco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.header-deco span {
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+}
+
+.header-deco svg {
+  width: 16px;
+  height: 16px;
+}
+
+.design-philosophy {
+  background: linear-gradient(180deg, var(--color-bg), var(--color-bg-light));
+  padding-bottom: 80px;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.philosophy-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 40px 24px;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(196, 163, 90, 0.1);
+}
+
+.philosophy-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-card);
+}
+
+.philosophy-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.philosophy-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.philosophy-card h3 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.philosophy-card p {
+  font-size: 14px;
+  color: var(--color-text-light);
+  line-height: 1.8;
+}
+
+.elements-app {
+  background: linear-gradient(180deg, var(--color-bg-light), var(--color-bg));
+  padding-bottom: 80px;
+}
+
+.elements-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.element-card {
+  background: white;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(196, 163, 90, 0.1);
+}
+
+.element-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-card);
+}
+
+/* 国风元素视觉 - 纯CSS图案 */
+.element-visual {
+  width: 100%;
+  height: 120px;
+  position: relative;
+}
+
+/* 山水画卷 */
+.element-mountain {
+  background: linear-gradient(180deg, #E8F4F8 0%, #D4E5ED 100%);
+  overflow: hidden;
+}
+
+.element-mountain::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80%;
+  background:
+    /* 远山 */
+    radial-gradient(ellipse 60% 40% at 20% 100%, rgba(107, 130, 140, 0.4) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 35% at 50% 100%, rgba(120, 145, 155, 0.35) 0%, transparent 65%),
+    radial-gradient(ellipse 55% 30% at 80% 100%, rgba(100, 125, 135, 0.3) 0%, transparent 60%),
+    /* 云雾 */
+    radial-gradient(ellipse 40% 15% at 30% 60%, rgba(255,255,255,0.8) 0%, transparent 70%),
+    radial-gradient(ellipse 35% 12% at 70% 50%, rgba(255,255,255,0.7) 0%, transparent 65%);
+}
+
+/* 花鸟灵韵 */
+.element-flower {
+  background: linear-gradient(135deg, #FDF5F5 0%, #F8E8E8 100%);
+}
+
+.element-flower::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle, #FFB6C1 30%, #FF91A4 70%);
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  box-shadow:
+    20px 0 0 -5px #FFB6C1,
+    0 20px 0 -5px #FFB6C1,
+    15px 15px 0 -8px #FF91A4;
+}
+
+.element-flower::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  width: 25px;
+  height: 15px;
+  background: #4A7C59;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-30deg);
+}
+
+/* 传统纹锦 */
+.element-pattern {
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #F5F0E6,
+      #F5F0E6 10px,
+      #E8DCC8 10px,
+      #E8DCC8 20px
+    );
+  position: relative;
+}
+
+.element-pattern::before {
+  content: '';
+  position: absolute;
+  inset: 20px;
+  border: 2px solid #C4A35A;
+  border-radius: 4px;
+}
+
+.element-pattern::after {
+  content: '';
+  position: absolute;
+  inset: 30px;
+  border: 1px dashed #C4A35A;
+}
+
+/* 诗词文化 */
+.element-poem {
+  background: linear-gradient(180deg, #FAF8F3 0%, #F0EBE0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.element-poem::before {
+  content: '詩';
+  font-family: 'Noto Serif SC', serif;
+  font-size: 48px;
+  color: rgba(61, 61, 61, 0.15);
+  font-weight: 700;
+}
+
+/* 器物美学 */
+.element-vessel {
+  background: linear-gradient(180deg, #F8F5F0 0%, #E8E0D4 100%);
+  position: relative;
+}
+
+.element-vessel::before {
+  content: '';
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 35px;
+  background: linear-gradient(180deg, #C4A35A 0%, #8B4513 100%);
+  border-radius: 5px 5px 15px 15px;
+}
+
+.element-vessel::after {
+  content: '';
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35px;
+  height: 8px;
+  background: #D4A5A5;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.element-card h3 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text);
+  padding: 20px 16px 8px;
+  text-align: center;
+}
+
+.element-card p {
+  font-size: 13px;
+  color: var(--color-text-light);
+  padding: 0 16px 20px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.packaging-show {
+  background: linear-gradient(180deg, var(--color-bg), var(--color-bg-light));
+  padding-bottom: 80px;
+}
+
+.packaging-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+}
+
+.packaging-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  position: relative;
+  overflow: hidden;
+}
+
+.packaging-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-card);
+}
+
+.pack-label {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: var(--color-text-light);
+  background: rgba(255,255,255,0.9);
+  padding: 4px 12px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+/* 包装展示 - CSS形状 */
+.pack-bag {
+  background: linear-gradient(145deg, #F5F0E6, #E8DCC8);
+}
+
+.pack-bag::before {
+  content: '';
+  width: 60px;
+  height: 80px;
+  background: linear-gradient(180deg, #C4A35A 0%, #8B4513 100%);
+  border-radius: 8px 8px 4px 4px;
+  position: relative;
+}
+
+.pack-bag::after {
+  content: '御膳';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+.pack-box {
+  background: linear-gradient(145deg, #8B4513, #654321);
+}
+
+.pack-box::before {
+  content: '';
+  width: 70px;
+  height: 50px;
+  background: linear-gradient(145deg, #D4A5A5, #C49494);
+  border-radius: 4px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pack-gift {
+  background: linear-gradient(145deg, #C4A35A, #A08040);
+}
+
+.pack-gift::before {
+  content: '';
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(145deg, #F5F0E6, #E8E0D0);
+  border-radius: 4px;
+}
+
+.pack-gift::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55px;
+  height: 8px;
+  background: #D4A5A5;
+}
+
+.pack-fan {
+  background: linear-gradient(145deg, #F8F5F0, #EBE5DB);
+}
+
+.pack-fan::before {
+  content: '';
+  width: 70px;
+  height: 40px;
+  background: linear-gradient(180deg, #3D3D3D 0%, #2A2A2A 50%, #3D3D3D 100%);
+  border-radius: 50% 50% 5px 5px / 80% 80% 20% 20%;
+}
+
+.pack-bowl {
+  background: linear-gradient(145deg, #E8E0D4, #D8D0C4);
+}
+
+.pack-bowl::before {
+  content: '';
+  width: 60px;
+  height: 30px;
+  background: linear-gradient(180deg, #A52A2A 0%, #8B2323 100%);
+  border-radius: 5px 5px 30px 30px;
+}
+
+.pack-tag {
+  background: linear-gradient(145deg, #F5F0E6, #E8E0D4);
+}
+
+.pack-tag::before {
+  content: '';
+  width: 40px;
+  height: 60px;
+  background: linear-gradient(180deg, #C4A35A, #8B4513);
+  border-radius: 4px;
+  position: relative;
+}
+
+.pack-tag::after {
+  content: '';
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: #F5F0E6;
+  border-radius: 50%;
+}
+
+.cta-section {
+  padding: 80px 0;
+  background: linear-gradient(180deg, var(--color-bg-light), var(--color-bg));
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--color-secondary), #A0522D);
+  color: white;
+  padding: 18px 48px;
+  border-radius: 32px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 24px rgba(139, 69, 19, 0.3);
+  margin-bottom: 16px;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(139, 69, 19, 0.4);
+  color: white;
+}
+
+.cta-subtitle {
+  font-size: 15px;
+  color: var(--color-text-light);
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1200px) {
+  .philosophy-grid { grid-template-columns: repeat(2, 1fr); }
+  .elements-grid { grid-template-columns: repeat(3, 1fr); }
+  .packaging-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 992px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-visual { order: -1; }
+  .window-frame { width: 280px; height: 280px; }
+  .title-main { font-size: 42px; }
+  .product-float { display: none; }
+}
+
+@media (max-width: 768px) {
+  .section-header h2 { font-size: 28px; }
+  .philosophy-grid { grid-template-columns: 1fr; }
+  .elements-grid { grid-template-columns: repeat(2, 1fr); }
+  .packaging-grid { grid-template-columns: repeat(2, 1fr); }
+  .title-main { font-size: 36px; }
+}
+
+@media (max-width: 480px) {
+  .elements-grid, .packaging-grid { grid-template-columns: 1fr; }
+}
